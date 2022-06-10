@@ -45,8 +45,11 @@
 const express = require('express')
 const app = express()
 const MongoClient = require('mongodb').MongoClient
+const cors = require('cors')
 const PORT = 2121
 require('dotenv').config()
+
+app.get(cors())
 
 
 let db,
